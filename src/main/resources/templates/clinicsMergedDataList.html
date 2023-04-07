@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        ClinicName
+    </tr>
+    <tr>
+        Active to
+    </tr>
+    <tr>
+        Doctors count
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="clinicDataMerged : ${clinicsDataMerged}">
+        <td th:text="${clinicDataMerged.clinicName}"></td>
+        <td th:text="${clinicDataMerged.activeTo}"></td>
+        <td th:text="${clinicDataMerged.doctorsCount}"></td>
+
+    </tr>
+</table>
+</body>
+</html>
