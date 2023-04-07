@@ -1,4 +1,4 @@
-package com.dsystem.cliniciqobserver.conig;
+package com.dsystem.cliniciqobserver.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
